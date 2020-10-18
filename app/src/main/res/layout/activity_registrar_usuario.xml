@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".RegistrarUsuarioActivity">
+
+    <TextView
+        android:id="@+id/txtTituloRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE USUARIOS"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="45dp"
+        />
+    <EditText
+        android:id="@+id/edTxtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/edTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/edTxtTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnRegistrarUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Usuario"
+        android:layout_marginTop="40dp"
+        />
+
+</LinearLayout>

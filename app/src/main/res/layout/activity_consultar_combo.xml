@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_marginBottom="30dp"
+    tools:context=".ConsultarComboActivity">
+
+    <TextView
+        android:id="@+id/tituloCombo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONSULTA SPINNER"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/subTituloCombo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una opción:"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:id="@+id/txtDocumentoCombo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Documento:"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/txtNombreCombo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/txtTelefonoCombo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono:"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

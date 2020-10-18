@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite!"
+        android:textSize="50dp"
+        android:gravity="center_horizontal"
+         />
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Usuario"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/btnConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Usuario"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnConsultaSppiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Usuario Spinner"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnConsultaListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Usuario ListView"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
