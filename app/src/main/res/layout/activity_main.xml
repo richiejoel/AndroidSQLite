@@ -23,6 +23,13 @@
         android:layout_marginTop="30dp"
         />
     <Button
+        android:id="@+id/btnRegistroMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Mascotas"
+        android:layout_marginTop="10dp"
+        />
+    <Button
         android:id="@+id/btnConsulta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +48,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Consultar Usuario ListView"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnConsultaListaMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Lista Mascota"
         android:layout_marginTop="10dp"
         />
 

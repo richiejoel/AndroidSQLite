@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnRegistro, btnConsulta, btnConsultaSppiner, btnConsultaListView;
+    Button btnRegistro, btnConsulta, btnConsultaSppiner, btnConsultaListView, btnRegistroMascota, btnConsultaListaMascota;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,11 +19,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnConsulta = findViewById(R.id.btnConsulta);
         btnConsultaSppiner = findViewById(R.id.btnConsultaSppiner);
         btnConsultaListView = findViewById(R.id.btnConsultaListView);
+        btnRegistroMascota = findViewById(R.id.btnRegistroMascota);
+        btnConsultaListaMascota = findViewById(R.id.btnConsultaListaMascota);
 
         btnRegistro.setOnClickListener(this);
         btnConsulta.setOnClickListener(this);
         btnConsultaSppiner.setOnClickListener(this);
         btnConsultaListView.setOnClickListener(this);
+        btnRegistroMascota.setOnClickListener(this);
+        btnConsultaListaMascota.setOnClickListener(this);
 
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_usuarios",  null, 1);
     }
@@ -43,6 +47,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnConsultaListView:
                 myIntent = new Intent(MainActivity.this, ConsultarListViewActivity.class);
+                break;
+            case R.id.btnRegistroMascota:
+                myIntent = new Intent(MainActivity.this, RegistroMascotaActivity.class);
+                break;
+            case R.id.btnConsultaListaMascota:
+                myIntent = new Intent(MainActivity.this, ConsultarMascotasActivity.class);
                 break;
         }
         if(myIntent != null){

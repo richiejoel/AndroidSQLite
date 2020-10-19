@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".RegistroMascotaActivity">
+
+    <TextView
+        android:id="@+id/tituloMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE MASCOTAS"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:id="@+id/txtNombreMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Mascota"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/txtRazaMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Raza Mascota"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dueño"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinnerDuenio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        />
+    <Button
+        android:id="@+id/btnRegistrarMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Mascota"
+        />
+
+</LinearLayout>
