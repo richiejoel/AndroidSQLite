@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnRegistro, btnConsulta, btnConsultaSppiner, btnConsultaListView, btnRegistroMascota, btnConsultaListaMascota;
+    Button btnRegistro, btnConsulta, btnConsultaSppiner, btnConsultaListView, btnRegistroMascota, btnConsultaListaMascota, btnConsultaUsuarioRecycler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnConsultaListView = findViewById(R.id.btnConsultaListView);
         btnRegistroMascota = findViewById(R.id.btnRegistroMascota);
         btnConsultaListaMascota = findViewById(R.id.btnConsultaListaMascota);
+        btnConsultaUsuarioRecycler = findViewById(R.id.btnConsultaUsuarioRecycler);
 
         btnRegistro.setOnClickListener(this);
         btnConsulta.setOnClickListener(this);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnConsultaListView.setOnClickListener(this);
         btnRegistroMascota.setOnClickListener(this);
         btnConsultaListaMascota.setOnClickListener(this);
+        btnConsultaUsuarioRecycler.setOnClickListener(this);
 
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_usuarios",  null, 1);
     }
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnConsultaListaMascota:
                 myIntent = new Intent(MainActivity.this, ConsultarMascotasActivity.class);
+                break;
+            case R.id.btnConsultaUsuarioRecycler:
+                myIntent = new Intent(MainActivity.this, ConsularPersonasRecyclerActivity.class);
                 break;
         }
         if(myIntent != null){

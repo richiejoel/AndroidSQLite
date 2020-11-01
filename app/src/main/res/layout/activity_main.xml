@@ -57,5 +57,12 @@
         android:text="Consultar Lista Mascota"
         android:layout_marginTop="10dp"
         />
+    <Button
+        android:id="@+id/btnConsultaUsuarioRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Usuario RecyclerView"
+        android:layout_marginTop="10dp"
+        />
 
 </LinearLayout>
